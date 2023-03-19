@@ -1,0 +1,549 @@
+/*MENÚ HAMBURGUESA*/
+/* Estilos móvil */
+@media all and (max-width: 700px) {
+
+  /* Oculta el nav en la parte izquierda */
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #0353A4;
+    transform: translateX(-100vw);
+    transition: 0.5s;
+    text-align: center;
+  }
+
+  /* Muestra el nav */
+  .nav--show {
+    transform: translateX(0);
+  }
+
+  .nav__button {
+    text-align: right;
+    margin: 1rem;
+  }
+
+  .nav__ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .nav__link {
+    display: block;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+  }
+}
+
+/* Estilos Escritorio */
+@media all and (min-width: 701px) {
+
+  /* Oculta botón de abrir o cerrar */
+  .nav__button,
+  .header__button-nav--open {
+    display: none;
+  }
+
+  /* Adapta el nav en horizontal */
+  .nav__ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+
+  .nav__link {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+    font-size: 22px;
+    text-decoration: none;
+    color: #B9D6F2;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .nav__link:hover {
+    opacity: 0.5;
+  }
+
+  .nav__ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+
+/*FIN MENÚ HAMBURGUESA*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+@import url('https://fonts.cdnfonts.com/css/averta-blackitalic');
+
+/**ANIMACIONES*/
+
+#davidfoto p {
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 2rem;
+  margin: 0 auto;
+  font-family: "Courier New";
+  border-right: 0.15em solid #000000;
+  animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
+}
+
+#sergiofoto p {
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 2rem;
+  margin: 0 auto;
+  font-family: "Courier New";
+  border-right: 0.15em solid #000000;
+  animation: typing2 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
+}
+
+#borjafoto p {
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 2rem;
+  margin: 0 auto;
+  font-family: "Courier New";
+  border-right: 0.15em solid #000000;
+  animation: typing3 3s steps(38) 1s 1 normal both, blink 1s steps(6) infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+@keyframes typing2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 95%;
+  }
+}
+@keyframes typing3 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 75%;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+/**FIN ANIMACIONES*/
+
+
+/**CUERPO*/
+
+#cuerpo{
+  background-color: #B9D6F2;
+}
+
+header{
+  background-color: #0353A4;
+  height: 8rem;
+  width: 100%;
+  z-index: 999;
+  text-align: center;
+}
+
+.nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  
+}
+
+.nav__ul{
+  margin-top: 2rem;
+}
+
+#lista1 ul a{
+  font-size: 18px;
+  text-decoration: none;
+  color: #B9D6F2;
+  font-family: 'Roboto', sans-serif;
+}
+
+#tituloPresentacion{
+  text-align: center;
+  margin-top: 4rem;
+  font-family: 'Averta-Bold', sans-serif;
+
+}
+
+#lista1 ul a:hover{
+  text-decoration: underline;
+}
+
+#lista1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 8rem;
+}
+
+#fotos{
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+
+#borjafoto{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+
+}
+
+#sergiofoto{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 3rem;
+}
+
+#davidfoto{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 1rem;
+}
+.david{
+  width: 90%;
+  
+}
+
+.sergio{
+  margin-top: 2rem;
+}
+
+/**FIN CUERPO*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    position: fixed;
+    width: 100%;
+    height: 18%;
+    overflow: auto;
+    left: -320px;
+    transition: all ease-in-out 200ms;
+  }
+  
+  .sidebar {
+    width: 320px;
+    height: 100%;
+    background: #000000;
+    overflow: auto;
+    float: left;
+    margin-left: -12px;
+  }
+  
+  
+  .side-hide {
+    float: right;
+    margin: 22px;
+    color: white;
+    opacity: .7;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .sidebar ul li {
+    list-style: none;
+    padding: 12px 10px;
+  }
+  
+  .sidebar ul li:hover {
+    background: #3a3d41;
+    cursor: pointer;
+  }
+  
+  .sidebar ul li a {
+    text-decoration: none;
+    color: #B9D6F2;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .content {
+    padding: 20px;
+    font-size: 16px;
+    color: black;
+    font-family: 'Poor Story', cursive;
+    }
+  
+  .content h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-left: 320px;
+    margin-bottom: 10px;
+  
+  }
+  
+  .content p {
+    font-size: 18px;
+    text-align: justify;
+    margin-left: 310px;
+  }
+  button {
+    background: black;
+    color: #B9D6F2;
+    padding: 10px 20px;
+    border: none;
+    display: block;
+    float: left;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 10px
+  }
+  
+  .show {
+    left: 0;
+  }
+
+
+
+/** HISTORIA XML*/
+
+#historiaXML{
+  margin-top: 4rem;
+  margin-right: 4rem;
+}
+
+.foto_xml2{
+  height: 10rem;
+  width: 20rem;
+  margin-top: 35rem;
+  margin-right: 2rem;
+}
+
+#tituloXML1{
+  text-decoration: underline;
+  font-family: 'Poor Story', cursive;
+}
+
+#tituloXML2{
+  text-decoration: underline;
+  font-family: 'Poor Story', cursive;
+}
+
+#historiaXML {
+	background: #B9D6F2;
+	margin: auto;
+  margin-bottom: -6rem;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.foto_xml{
+  height: 15rem;
+  width: 15rem;
+}
+
+.foto_xml2{
+  height: 15rem;
+  width: 25rem;
+}
+
+
+#colFotos{
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/** HISTORIA JSON*/
+
+#historiaJSON{
+  margin-top: 4rem;
+  margin-right: 4rem;
+}
+
+.foto_xml2{
+  height: 10rem;
+  width: 20rem;
+  margin-top: 35rem;
+  margin-right: 2rem;
+}
+
+#tituloJSON1{
+  text-decoration: underline;
+  font-family: 'Poor Story', cursive;
+}
+
+#tituloJSON2{
+  text-decoration: underline;
+  font-family: 'Poor Story', cursive;
+}
+
+#historiaJSON {
+	background: #B9D6F2;
+	width: 100%;
+	margin: auto;
+  margin-bottom: -6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.foto_xml{
+  height: 15rem;
+  width: 15rem;
+}
+
+.foto_xml2{
+  height: 15rem;
+  width: 25rem;
+}
+
+
+#colFotos{
+  margin-left: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/** FOOTER */
+
+footer{
+  box-shadow: 8px 0 0 0 rgba(0.2, 0, 0, 0), 20px 0 20px 0 rgba(0.19, 0, 0, 0);
+}
+
+.container__footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 100px;
+  background-color: #044485;
+}
+
+.redes_sociales{
+  padding-top: 5rem;
+}
+
+#consulta{
+  background-color: #044485;
+  padding-top: 1rem;
+}
+
+#posicionconsulta{
+  justify-content: center;
+  flex-direction: row;
+}
+
+.pt-2{
+  color: #B9D6F2;
+  padding-left: 1rem;
+}
+
+.col-auto{
+  padding-left: 1rem;
+}
+
+#barra{
+  padding-left: 1rem;
+}
+
+.footerbusqueda{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.barrafooter{
+  width: 400px;
+  height: auto;
+  padding-left: 2rem;
+}
+
+.botonfooter{
+  align-items: center;
+  display: flex;
+}
+
+.box__footer{
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.box__footer .logo img{
+  width: 180px;
+}
+
+.box__footer .terms{
+  max-width: 350px;
+  margin-top: 20px;
+  font-weight: 500;
+  color: #B9D6F2;
+  font-size: 18px;
+}
+
+.box__footer h2{
+  margin-bottom: 30px;
+  color: #B9D6F2;
+  font-weight: 700;
+}
+
+.box__footer a{
+  margin-top: 10px;
+  color: #B9D6F2;
+  font-weight: 600;
+}
+
+.box__footer a:hover{
+  opacity: 0.8;
+}
+
+.box__footer a .fab{
+  font-size: 20px;
+}
+
+/** FIN FOOTER */

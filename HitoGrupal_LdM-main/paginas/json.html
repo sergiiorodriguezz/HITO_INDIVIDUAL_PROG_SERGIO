@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script src="https://kit.fontawesome.com/81e592c019.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</head>
+<body id="cuerpo">
+          <!-- AlpineJS para gestionar el evento Clic -->
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<!-- Header -->
+<header x-data="{ open: false }" class="header">
+<!-- Boton abrir -->
+  <button class="header__button-nav--open" x-on:click="open = true"><i class="fa-solid fa-bars"></i></button>
+<!-- Navegador -->
+  <nav class="nav" x-bind:class="open ? 'nav--show' : ''">
+<!-- Boton cerrar -->
+    <div class="nav__button" x-on:click="open = false">
+      <button class="header__button-nav--close">Cerrar</button>
+    </div>
+<!-- Menu -->
+    <ul class="nav__ul">
+      <li class="nav__item"><a href="../index.php" class="nav__link">HOME</a></li>
+      <li class="nav__item"><a href="xml.html" class="nav__link">XML</a></li>
+      <li class="nav__item"><a href="#" class="nav__link"><strong>JSON</strong></a></li>
+      <li class="nav__item"><a href="contacto.html" class="nav__link">CONTACTO</a></li>
+    </ul>
+</header>
+        <div id="historiaJSON">
+            <div class="content">
+                <h1 id="tituloJSON1">HISTORIA</h1><br>
+                <h4>JSON, cuyas siglas significan en verdad JavaScript object notation que, en español se traducen como, notación de objetos de JavaScript, es un formato de intercambio de datos que resulta muy fácil de leer y escribir para los programadores y sencillo de interpretar y crear para las máquinas.
+
+                <h4>JSON es un formato de texto totalmente independiente del lenguaje de programación, pero utiliza términos que son comúnmente conocidos por los programadores, entre ellas:</h4>
+                <h4>
+                    - C
+                    <br>
+                    - C++
+                    <br>
+                    - C#
+                    <br>
+                    - Java
+                    <br>
+                    - JavaScript
+                    <br>
+                    - Perl
+                    <br>
+                    - Python, entre otros.
+                    <br><br>
+                    Según la descripción de Stack Overflow, JSON:
+                    
+                    </h4>
+                <h4>En resumen, JSON no es un lenguaje de programación sino un archivo que contiene datos estructurados, que se utiliza para transferir información entre sistemas.</h4>
+                <h4>A comienzos de la década de los 90 surgió el problema de que las máquinas con diferentes sistemas operativos y lenguajes pudieran entenderse entre sí. Así fue, de hecho, que nació XML como una solución estándar.</h4>
+                <h4>En su momento comenzaron a aparecer intentos para definir formatos que fueran más ligeros y rápidos para el intercambio de información. Uno de ellos fue JSON, promovido y popularizado 10 años después de la aparición de XML.</h4>
+                <h4>Desde entonces, JSON se caracteriza por reducir el tamaño de los archivos y el volumen de datos que es necesario transmitir. Estos factores hicieron que JSON fuera adquiriendo popularidad hasta convertirse en una eminencia.</h4>
+                <h4>Aun así, esto no significa que XML haya dejado de utilizarse. Actualmente, ambos se usan para el intercambio de datos.</h4>
+                <h4>En este punto te preguntarás quién está usando JSON en la actualidad. En primer lugar, su creador, el mismísimo arquitecto senior de Yahoo JavaScript.</h4>
+                <h4>El uso de JSON está creciendo rápidamente en la industria debido a que es una tecnología útil para los desarrollos. Por ejemplo y recientemente, Twitter migró de XML a JSON.</h4><br>
+                
+                <h1 id="tituloJSON2">NORMAS DE USO Y SINTAXIS</h1> <br>
+                <h4>“Define seis tipos de valores: nulo, números, cadenas, booleanos, matrices y objetos”. <h4>Su funcionamiento se basa en la estructuración de una colección de pares con nombre y valor que contienen:</h4>
+
+                <h4>- Una clave: que corresponde al identificador del contenido.</h4> 
+                <h4>- Un valor: que representa el contenido correspondiente.</h4><br>
+                <br><h4>Según el campus Academy by Numen, las características de JSON son:</h4>
+                <h4>- JSON es solo un formato de datos. <br>- Requiere usar comillas dobles para las cadenas y los nombres de propiedades. Las comillas simples no son válidas. <br>- Una coma o dos puntos mal ubicados pueden producir que un archivo JSON no funcione. <br>- Puede tomar la forma de cualquier tipo de datos que sea válido para ser incluido en un JSON, no solo arreglos u objetos. Así, por ejemplo, una cadena o un número único podrían ser objetos JSON válidos. <br>- A diferencia del código JavaScript, en el que las propiedades del objeto pueden no estar entre comillas, en JSON solo las cadenas entre comillas pueden ser utilizadas como propiedades.</h4>
+                <br><img src="../img/Captura.PNG" alt="">
+            </div>
+            <div id="colFotos">
+                <img src="../img/JSON_vector_logo.svg.png" class="foto_xml">
+            </div>
+        </div>
+        <footer>
+          <div class="container__footer"> 
+              <div class="box__footer">
+                <section class="redes_sociales">
+                  <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+                  <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i class="fab fa-google"></i></a>
+                  <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+                  <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+                </section>
+              </div>
+              <div class="box__footer">
+                  <h2>Contacto</h2>
+                  <a href="#">+123 45 67 89</a>
+                  <a href="#">gruposdb@campusfp.es</a>
+                  <a href="#">Chat Online</a>
+                  <a href="#">C/ del Campus 27</a>
+              </div>
+              <div class="box__footer">
+                <h2>Acceso directo</h2>
+                <a href="index.html">HOME</a>
+                <a href="paginas/xml.html">XML</a>
+                <a href="paginas/json.html">JSON</a>  
+            </div>
+            </div>
+            <div id="consulta">
+              <section class="">
+                <form action="">
+                  <div id="posicionconsulta" class="d-flex justify-content-left">
+                    <div class="col-auto">
+                      <p class="pt-2">
+                        <strong>Para cualquier consulta ponte en contacto con nosotros</strong>
+                      </p>
+                    </div>
+                    <div class="col-md-3 col-8">
+                      <div id="barra" class="form-outline form-white mb-3">
+                        <input type="email" id="form4Example21" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <button type="submit" class="btn btn-outline-light mb-4">
+                        Enviar
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </section>
+            </div>
+              <div class="text-center p-3" style="background-color: #B9D6F2" style="color: black;">
+                <strong>© 2023 Copyright</strong>
+              </div>
+        </footer>
+</body>

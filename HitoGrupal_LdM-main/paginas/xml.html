@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script src="https://kit.fontawesome.com/81e592c019.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XML</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</head>
+<body id="cuerpo">
+          <!-- AlpineJS para gestionar el evento Clic -->
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<!-- Header -->
+<header x-data="{ open: false }" class="header">
+<!-- Boton abrir -->
+  <button class="header__button-nav--open" x-on:click="open = true"><i class="fa-solid fa-bars"></i></button>
+<!-- Navegador -->
+  <nav class="nav" x-bind:class="open ? 'nav--show' : ''">
+<!-- Boton cerrar -->
+    <div class="nav__button" x-on:click="open = false">
+    <button class="header__button-nav--close">Cerrar</button>
+    </div>
+<!-- Menu -->
+    <ul class="nav__ul">
+      <li class="nav__item"><a href="../index.php" class="nav__link">HOME</a></li>
+      <li class="nav__item"><a href="#" class="nav__link"><strong>XML</strong></a></li>
+      <li class="nav__item"><a href="json.html" class="nav__link">JSON</a></li>
+      <li class="nav__item"><a href="contacto.html" class="nav__link">CONTACTO</a></li>
+    </ul>
+</header>
+
+        <div id="historiaXML">
+            <div class="content">
+                <h1 id="tituloXML1">HISTORIA</h1><br>
+                <h4>El XML viene de un lenguaje que inventó IBM allá por los años 70. El lenguaje de IBM se llama <strong>GML</strong> (General Markup Language) y surgió por la necesidad que tenían en la empresa de almacenar grandes cantidades de información de temas diversos.</h4>
+                <h4>Necesitaban una manera de guardar la información y los expertos de IBM se inventaron GML, un lenguaje con el que poder clasificarlo todo y escribir cualquier documento para que se pueda luego procesar adecuadamente.</h4>
+                <h4>De modo que allá por el 86 trabajaron para normalizar el lenguaje, creando el SGML, que no era más que el GML pero estándar (Standar en inglés).</h4>
+                <h4>SGML es un lenguaje muy trabajado, capaz de adaptarse a un gran abanico de problemas y a partir de él se han creado los siguientes sistemas para almacenar información.</h4>
+                <h4>Por el año 89, un usuario que había conocido el lenguaje de etiquetas  y los hiperenlaces creó un nuevo lenguaje llamado HTML, que fue utilizado para un nuevo servicio de Internet, la Web. Este lenguaje fue adoptado rápidamente por la comunidad y varias organizaciones comerciales crearon sus propios visores de HTML, reinventando etiquetas como su propia voluntad les decía. </h4>
+                <h4>Desde el 96 hasta hoy una entidad llamada W3C ha tratado de poner orden en el HTML y establecer sus reglas y etiquetas para que sea un estándar. Sin embargo el HTML creció de una manera descontrolada y no cumplió todos los problemas que planteaba la sociedad global de Internet.</h4>
+                <h4>El mismo W3C en el 98 empezó y continúa, en el desarrollo de XML. En este lenguaje se ha pensado mucho más y muchas personas con grandes conocimientos en la materia están trabajando todavía. Pretendían solucionar las carencias del HTML.</h4><br>
+                
+                <h1 id="tituloXML2">NORMAS DE USO Y SINTAXIS</h1> <br>
+                <h4>- Todos los elementos XML deben tener una etiqueta de cierre. <br> - Las etiquetas XML son sensibles a mayúsculas y minúsculas. <br> - Todos los elementos XML deben estar debidamente anidados.<br> - Todos los documentos XML debe tener un elemento raíz. <br> - Los valores de atributo siempre deben estar entre comillas.</h4>
+                <br><h4>No está permitido omitir la etiqueta de cierre al crear la sintaxis XML. Los elementos XML deben tener una etiqueta de cierre.</h4>
+                <br><img src="../img/correctoincorrecto.PNG" alt="">
+            </div>
+            <div id="colFotos">
+                <img src="../img/xml.png" alt="" class="foto_xml">
+                <img src="../img/xml2.png" alt="" class="foto_xml2">
+            </div>
+        </div>
+
+        <footer>
+          <div class="container__footer"> 
+              <div class="box__footer">
+                <section class="redes_sociales">
+                  <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+                  <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i class="fab fa-google"></i></a>
+                  <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+                  <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+                </section>
+              </div>
+              <div class="box__footer">
+                  <h2>Contacto</h2>
+                  <a href="#">+123 45 67 89</a>
+                  <a href="#">gruposdb@campusfp.es</a>
+                  <a href="#">Chat Online</a>
+                  <a href="#">C/ del Campus 27</a>
+              </div>
+              <div class="box__footer">
+                <h2>Acceso directo</h2>
+                <a href="index.html">HOME</a>
+                <a href="paginas/xml.html">XML</a>
+                <a href="paginas/json.html">JSON</a>  
+            </div>
+            </div>
+            <div id="consulta">
+              <section class="">
+                <form action="">
+                  <div id="posicionconsulta" class="d-flex justify-content-left">
+                    <div class="col-auto">
+                      <p class="pt-2">
+                        <strong>Para cualquier consulta ponte en contacto con nosotros</strong>
+                      </p>
+                    </div>
+                    <div class="col-md-3 col-8">
+                      <div id="barra" class="form-outline form-white mb-3">
+                        <input type="email" id="form4Example21" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <button type="submit" class="btn btn-outline-light mb-4">
+                        Enviar
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </section>
+            </div>
+              <div class="text-center p-3" style="background-color: #B9D6F2" style="color: black;">
+                <strong>© 2023 Copyright</strong>
+              </div>
+        </footer>
+
+
+</body>
